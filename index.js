@@ -1,0 +1,8 @@
+let navMenu=document.querySelector(".nav_menu");let openMenu=document.querySelector("#nav_open_menu");openMenu.addEventListener("click",()=>{navMenu.classList.toggle("active")})
+window.addEventListener("scroll",()=>{navMenu.classList.remove("active")})
+let searchBar=document.querySelector(".search_form");let searchBtn=document.querySelector("#nav_search_btn");searchBtn.addEventListener("click",()=>{searchBar.classList.toggle("active")})
+window.addEventListener("scroll",()=>{searchBar.classList.remove("active")})
+let loginBtn=document.querySelector("#nav_login_btn");let loginForm=document.querySelector(".login_form");loginBtn.addEventListener("click",()=>{loginForm.classList.toggle("active")})
+window.addEventListener("scroll",()=>{loginForm.classList.remove("active")})
+let infoBtn=document.querySelector("#nav_info_btn");let contactInfo=document.querySelector(".contact_info");let closeContactBtn=document.querySelector("#close_contact_info");infoBtn.addEventListener("click",()=>{contactInfo.style.display=" inline-block";contactInfo.classList.toggle("active")})
+closeContactBtn.addEventListener("click",()=>{contactInfo.style.display=" none";contactInfo.classList.remove("active")})
